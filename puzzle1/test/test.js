@@ -1,5 +1,4 @@
 var should = require('should');
-var assert = require('assert');
 var floors = require('../floors.js')
 describe('floors', function() {
   describe('calculate()', function() {
