@@ -1,9 +1,9 @@
 module.exports = {
     calculate : (input) => {
         var floors = input.split("");
-        var upFloors = floors.filter(floor => floor == "(");
-        var downFloors = floors.filter(floor => floor == ")");
+        var upFloors = floors.filter(floor => floor == "(").length;
+        var downFloors = floors.filter(floor => floor == ")").length;
         
-        return upFloors.length - downFloors.length;
+        return upFloors - downFloors;
     }
 };
