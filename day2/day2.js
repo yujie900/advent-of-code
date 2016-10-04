@@ -1,4 +1,5 @@
 module.exports = {
+    //part 1
     findTotalWraps: (input) => {
         var boxes = input.split("\n");
         var wraps = boxes.map((box) => {
@@ -24,7 +25,7 @@ module.exports = {
         var total = wraps.reduce((prev, curr) => prev + curr);
         return total;
     },
-
+    //part 2
     findTotalRibbons: (input) => {
         var boxes = input.split("\n");
         var ribbons = boxes.map((box) => {
