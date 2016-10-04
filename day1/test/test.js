@@ -4,7 +4,7 @@ const fs = require('fs');
 
 describe('day1', function () {
   var day1_input;
-  fs.readFile('day1_input.txt', 'utf8', (err, data) => {
+  fs.readFile("test/day1_input.txt", 'utf8', (err, data) => {
     if (err)
     { throw err; }
     day1_input = data;
@@ -19,7 +19,7 @@ describe('day1', function () {
     });
   });
 
-  describe('findBasement', function () {
+  describe('findBasement()', function () {
     it('should return 5 for (()))', function () {
       day1.findBasement('(()))').should.be.exactly(5);
     });
