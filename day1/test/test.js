@@ -4,7 +4,7 @@ const fs = require('fs');
 
 describe('day1', function () {
   var day1_input;
-  fs.readFile("test/day1_input.txt", 'utf8', (err, data) => {
+  fs.readFile("day1_input.txt", 'utf8', (err, data) => {
     if (err)
     { throw err; }
     day1_input = data;
